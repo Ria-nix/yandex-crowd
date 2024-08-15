@@ -12,21 +12,21 @@
             <header class="club__hero hero _container">
             <img src="./imgs/logo.svg" alt="logotype" />
               <div class="hero__content">
-                <h1> Превратите <br /> уездный город <br /><span>в столицу <br />
-                    земного шара</span >
+                <h1> Превратите <br/>уездный город<br/><span>в столицу</span ><br />
+                    <span>земного шара</span>
                 </h1>
-                <p>Оплатите взнос на телеграммы для организации <br /> Международного
+                <p>Оплатите взнос на телеграммы для организации <br/> Международного
                   васюкинского турнира по шахматам</p>
                   <div class="hero__wrap-btn">
-                      <a href="#" class="hero__btn _black">Поддержать <br />
+                      <a href="#chess-mind" class="hero__btn _black">Поддержать <br/>
                         шахматную мысль</a>
-                      <a href="#" class="hero__btn _white">Подробнее <br />
+                      <a href="#about-tournament" class="hero__btn _white">Подробнее <br/>
                         о турнире</a>
                   </div>
               </div>
             </header>
         </div>
-        <div class="club__stock">
+        <div class="club__stock">   
             <ul>
                 <li>Дело помощи утопающим — дело рук самих утопающих!</li>
                 <li>Шахматы двигают вперед не только культуру, но и экономику!</li>
@@ -38,21 +38,21 @@
                 <li>Лед тронулся, господа присяжные заседатели!</li>
             </ul>
         </div>
-        <main class="club__content content">
-            <div class="content__about-chess _container">
-                <div class="content__support">
+        <main class="club__content content _container">
+            <div class="content__about-chess" >
+                <div class="content__support" id="chess-mind">
                     <h3>Чтобы поддержать <br>Международный васюкинский <br>турнир <span>посетите лекцию на тему: <br><span class="_red">«Плодотворная дебютная идея»</span></span></h3>
                     <span class="content__wrap-img">
                         <img src="./imgs/img-chess.png" alt="chess">
                     </span>
                     <h3 class="club__mobile-text">посетите лекцию на тему: <span class="_red">«Плодотворная дебютная идея»</span></h3>
                 </div>
-                <div class="content__winner">
+                <div class="content__winner" id="about-tournament">
                     <span class="content__wrap-img">
                         <img src="./imgs/img-win.png" alt="winner">
                     </span>
+                    <h3>и Сеанс <span class="_red">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h3>
                     <div class="content__winner-desc">
-                        <h3>ии Сеанс <span class="_red">одновременной игры в шахматы на 160 досках</span> гроссмейстера О. Бендера</h3>
                         <ul class="content__table">
                             <li>
                                 <p>Место проведения:</p>
@@ -80,61 +80,163 @@
                 </div>
             </div>
 
-            <div class="content__steps _container">
+            <div class="content__steps">
                 <h2>Этапы преображения <br>Васюков <span>Будущие источники <br>обогащения васюкинцев</span></h2>
-                <ul class="content__steps-wrap">
-                    <li>
+                <ul class="content__steps-wrap slideshow-first">
+                    <li class="mySlides">
                         <span class="content__pointer">1</span>
                         <p>Строительство железнодорожной магистрали Москва-Васюки</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">2</span>
                         <p>Открытие фешенебельной гостиницы «Проходная пешка» и других небоскрёбов</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">3</span>
                         <p>Поднятие сельского хозяйства в радиусе на тысячу километров: производство овощей, фруктов, икры, шоколадных конфет</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">4</span>
                         <p>Строительство дворца для турнира</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">5</span>
                         <p>Размещение гаражей для гостевого автотранспорта</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">6</span>
                         <p>Постройка сверхмощной радиостанции для передачи всему миру сенсационных результатов</p>
                     </li>
-                    <li>
+                    <li class="mySlides">
                         <span class="content__pointer">7</span>
                         <p>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
                         <img src="./imgs/img-plane.png" alt="plane">
                     </li>
                 </ul>
+                <div class="content__pagination-card _points">
+                    <button type="button" class="content__arrow-left"></button>
+                    <!-- <p class="content__pagination-text"></p> -->
+                    <ul class="content__pagination-dots">
+                        <li class="dot" onclick="currentSlide(this)"></li> 
+                        <li class="dot" onclick="currentSlide(this)"></li> 
+                        <li class="dot" onclick="currentSlide(this)"></li> 
+                        <li class="dot" onclick="currentSlide(this)"></li> 
+                        <li class="dot" onclick="currentSlide(this)"></li>  
+                        <li class="dot" onclick="currentSlide(this)"></li> 
+                        <li class="dot" onclick="currentSlide(this)"></li>   
+                      </ul>
+                    <button type="button" class="content__arrow-right" disabled></button>
+                </div>
             </div>
 
-            <div class="content__participants _container">
+            <!-- <div class="slideshow-first">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 5</div>
+                  <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 5</div>
+                  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg">
+                 
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 5</div>
+                  <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 5</div>
+                  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                </div>
+
+                <a class="prevFirst" onclick="preSlides()">&#10094;</a>
+                <a class="nextFirst" onclick="plusSlides()">&#10095;</a>
+              </div> -->
+   
+              
+
+
+
+            <div class="content__participants">
                 <h2>Участники турнира</h2>
                 <div class="content__pagination-card">
                     <button type="button" class="content__arrow-left"></button>
                     <p class="content__pagination-text"><span>3 </span>/ 5</p>
                     <button type="button" class="content__arrow-right" disabled></button>
                 </div>
-                <div class="content__carousel-cards">
-                    <div class="content__card-person">
-                        <span>
-                            <img class="content__wrap-img" src="./imgs/img-user.png" alt="user">
+                <ul class="content__carousel-cards slideshow-second">
+                    <li class="content__card-person mySlides">
+                        <span class="content__wrap-img">
+                            <img src="./imgs/img-user.png" alt="user">
                         </span>
                         <div class="content__card-about">
                             <p class="content__card-name">Хозе-Рауль Капабланка</p>
                             <p class="content__card-desc">Чемпион мира по шахматам</p>
                         </div>
                         <a class="content__card-more" href="#">Подробнее</a>
+                    </li>
+                    <li class="content__card-person mySlides">
+                        <span class="content__wrap-img">
+                            <img src="./imgs/img-user.png" alt="user">
+                        </span>
+                        <div class="content__card-about">
+                            <p class="content__card-name">Хозе-Рауль Капабланка</p>
+                            <p class="content__card-desc">Чемпион мира по шахматам</p>
+                        </div>
+                        <a class="content__card-more" href="#">Подробнее</a>
+                    </li>
+                    <li class="content__card-person mySlides">
+                        <span class="content__wrap-img">
+                            <img src="./imgs/img-user.png" alt="user">
+                        </span>
+                        <div class="content__card-about">
+                            <p class="content__card-name">Хозе-Рауль Капабланка</p>
+                            <p class="content__card-desc">Чемпион мира по шахматам</p>
+                        </div>
+                        <a class="content__card-more" href="#">Подробнее</a>
+                    </li>
+                </ul>
+
+                <!-- <div class="slideshow-container">
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
                     </div>
-                </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg"> 
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 5</div>
+                      <img src="https://www.w3schools.com/howto/img_fjords_wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 5</div>
+                      <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="preSlides()">&#10094;</a>
+                    <a class="next" onclick="plusSlides()">&#10095;</a>
+                  </div> -->
             </div>
+
+
+           
+              
         </main>
         <div class="club__stock">
             <ul>
